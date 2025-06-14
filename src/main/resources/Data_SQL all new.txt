@@ -1,0 +1,117 @@
+
+1) user  
+2) categories              
+3) currencies               
+4) expenses                 
+5) incomes                  
+6) investments              
+7) modeofpayments
+       
+======================================================================================================================================================================  
+1) user
+
+INSERT INTO user (user_id,email,mobno,name,password,username,currency_id) VALUES (1, 'sagar@gmail.com', '7507294941', 'Sagar', 'sagar@111', 'sagar111', 2);
+INSERT INTO user (user_id,email,mobno,name,password,username,currency_id) VALUES (2, 'dhiraj@gmail.com', '7507294942', 'Dhiraj', 'dhiraj@222', 'dhiraj222', 2);
+
+
+======================================================================================================================================================================
+2) modeofpayments
+
+
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (1, 'Cash');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (2, 'Online Banking');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (3, 'Credit Card');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (4, 'Debit Card');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (5, 'Cheque');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (6, 'Demond Draft');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (7, 'UPI Payment');
+INSERT INTO modeofpayments (mop_id, mode_of_payment) VALUES (8, 'Other');
+
+======================================================================================================================================================================
+
+3) currencies               
+
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (1, 'Others', ' ');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (2, 'Dollars', '$');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (3, 'Rupees', '₹');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (4, 'Pounds', '£');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (5, 'Euro', '€');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (6, 'Yuan Renminbi', '¥');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (7, 'Yen', '¥');
+INSERT INTO currencies (currency_id,currency_name, currency_symbol) VALUES (8, 'Dinars', 'Дин.');
+
+=======================================================================================================================================================================
+2)categories               
+
+INSERT INTO categories (category_id, category_name, category_type) VALUES (1, 'Others', 'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (2, 'Salary' ,  'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (3, 'Returns', 'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (4, 'Wages' , 'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (5, 'Commission', 'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (6,'Interest' , 'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (7, 'Pocket Money', 'Income');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (8, 'Gifts', 'Income');
+
+
+INSERT INTO categories (category_id, category_name, category_type) VALUES (9, 'Others', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (10, 'Property Tax', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (11, 'Maintanance', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (12, 'Rent', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (13, 'Electricity', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (14, 'Gas', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (15, 'Water', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (16, 'Phone', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (17, 'Internet', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (18, 'TV', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (19, 'Subscription', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (20, 'EMIs', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (21, 'Groceries', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (22, 'Transportation', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (23, 'Vehicle Maintanance', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (24, 'Personal', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (25, 'Gifts', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (26, 'Medical', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (27, 'Fuel', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (28, 'College Fee', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (29, 'Vacation/Travel', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (30, 'Enjoy', 'Expense');
+INSERT INTO categories (category_id, category_name, category_type) VALUES (31, 'Donations', 'Expense');
+
+
+
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (32, 'Others', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (33, 'Saving Account', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (34, 'FDs', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (35, 'SIPs', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (36, 'Life Insurence', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (37, 'Health Insurence', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (38, 'Stocks', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (39, 'Mutual Funds', 'Investment');
+INSERT INTO categories (category_id, category_name,  category_type) VALUES (40, 'Crypto/NFTs', 'Investment');
+
+=======================================================================================================================================================================
+4) expenses                 
+
+INSERT INTO expenses (expense_id, amount, date,description,category_id,mop_id,user_id) VALUES (1, '5000', '2022/04/6', 'Room rent of April', 12, 1, 1);
+INSERT INTO expenses (expense_id, amount, date,description,category_id,mop_id,user_id) VALUES (2, '6000', '2022/04/7', 'Electricity of April',13 , 2,2);
+INSERT INTO expenses (expense_id, amount, date,description,category_id,mop_id,user_id) VALUES (3, '3000', '2022/04/5', 'Gas for April And May', 14, 7, 1);
+INSERT INTO expenses (expense_id, amount, date,description,category_id,mop_id,user_id) VALUES (4, '2000', '2022/04/4', '3rd Year fee', 28 , 5, 2);
+
+=======================================================================================================================================================================
+5) incomes                  
+
+INSERT INTO incomes (income_id, amount, date,category_id, user_id) VALUES (1, '13000', '2022/04/6', 2, 1);
+INSERT INTO incomes (income_id, amount, date,category_id, user_id) VALUES (2, '15000', '2022/04/7', 4, 2);
+INSERT INTO incomes (income_id, amount, date,category_id, user_id) VALUES (3, '20000', '2022/04/8', 7, 1);
+INSERT INTO incomes (income_id, amount, date,category_id, user_id) VALUES (4, '25000', '2022/04/2', 3, 2);
+
+=======================================================================================================================================================================
+6) investments
+
+INSERT INTO investments (investment_id, amount, date, description, interest_rate, investment_period, category_id, user_id) VALUES (1, '5000', '2022/04/6', 'Added into Saving_Account', 11.5, 5, 33, 1);
+INSERT INTO investments (investment_id, amount, date, description, interest_rate, investment_period, category_id, user_id) VALUES (2, '7000', '2022/04/5', 'Added into FDs', 7.2, 3, 34, 2);
+INSERT INTO investments (investment_id, amount, date, description, interest_rate, investment_period, category_id, user_id) VALUES (3, '7000', '2022/04/5', 'Added into SIPs', 5.5, 2, 35, 2);
+INSERT INTO investments (investment_id, amount, date, description, interest_rate, investment_period, category_id, user_id) VALUES (4, '7000', '2022/04/5', 'Opened Life Insurence', 9.5, 4, 36, 1);
+
+
+
