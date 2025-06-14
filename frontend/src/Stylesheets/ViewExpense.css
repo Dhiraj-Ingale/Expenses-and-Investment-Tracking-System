@@ -1,0 +1,75 @@
+#title {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    border : 5px solid grey;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+#table{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: white;
+}
+
+thead tr {
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tbody tr {
+    margin: 5px;
+    border-radius: 5px;
+    color : black;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+#control {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content:center;
+}
+
+#month {
+    width: 135px;
+    position: relative;
+    margin-left: 39%;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+#year {
+    width: 135px;
+    position: relative;
+    margin-left: 30px;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+#addbtn {
+    width: 150px;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12.5%;
+    text-align: center;
+}
