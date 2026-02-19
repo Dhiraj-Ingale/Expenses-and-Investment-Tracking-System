@@ -35,6 +35,7 @@ integration.
 -   Spring Data JPA
 -   Hibernate
 -   RESTful APIs
+-   Maven
 
 ### 🔹 Database
 
@@ -45,7 +46,30 @@ integration.
 ### 🔹 Frontend
 
 -   ReactJS
--   Axios (for API communication)
+-   Axios (HTTP client for API communication)
+
+----------------------------------------------------------------------
+
+## 🏗️ Architecture Overview
+
+The application follows industry-standard layered architecture:
+
+    Client (ReactJS)
+          ↓ Axios (REST Calls)
+    Spring Boot Controller Layer
+          ↓
+    Service Layer (Business Logic)
+          ↓
+    Repository Layer (JPA/Hibernate)
+          ↓
+    MySQL Database
+
+This ensures:
+
+-   Separation of concerns
+-   Maintainability
+-   Scalability
+-   Clean code practices
 
 ------------------------------------------------------------------------
 
@@ -54,6 +78,7 @@ integration.
 ### ✅ User Features
 
 -   Add, update, delete expenses
+-   Add, update, delete incomes
 -   Add, update, delete investments
 -   Categorize transactions
 -   View complete transaction history
@@ -62,10 +87,10 @@ integration.
 
 ### ✅ System Features
 
--   Layered architecture (Controller → Service → Repository)
+-   Annotation-driven configuration
 -   RESTful API design
 -   ORM-based database interaction (Hibernate)
--   Axios-based frontend-backend communication
+-   Axios-based frontend-backend asynchronous communication
 -   Clean separation of concerns
 -   Scalable and maintainable project structure
 
@@ -97,7 +122,7 @@ integration.
 
 ### 1️⃣ Prerequisites
 
--   Java 17+
+-   Java 11+
 -   Maven
 -   MySQL
 
@@ -106,7 +131,7 @@ integration.
 Update `application.properties`:
 
 ``` properties
-spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
+spring.datasource.url=jdbc:mysql://localhost:3306/expensetracker
 spring.datasource.username=root
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
@@ -158,14 +183,14 @@ Axios handles API communication between React and Spring Boot.
 
 The application follows RESTful principles:
 
-  Method   Endpoint             Description
-  -------- -------------------- -----------------------
-  GET      /api/expenses        Fetch all expenses
-  POST     /api/expenses        Add new expense
-  PUT      /api/expenses/{id}   Update expense
-  DELETE   /api/expenses/{id}   Delete expense
-  GET      /api/investments     Fetch all investments
-  POST     /api/investments     Add investment
+  Method   Endpoint                 Description
+  -------- --------------------     -----------------------
+  GET      /expenses/all            Fetch all expenses
+  POST     /expenses                Add new expense
+  PUT      /expenses/{expenseId}    Update expense
+  DELETE   /expenses/{expenseId}    Delete expense
+  GET      /investments             Fetch all investments
+  POST     /investments             Add investment
 
 ------------------------------------------------------------------------
 
@@ -176,45 +201,16 @@ Use: - Postman - cURL - Browser DevTools (Network tab)
 Example:
 
 ``` bash
-curl http://localhost:8080/api/expenses
+curl http://localhost:8080/expenses
 ```
 
 ------------------------------------------------------------------------
 
-## 📈 Why This Project Stands Out
+## 🔮 Future Enhancements
 
-✔ Demonstrates full-stack development skills\
-✔ Clean backend architecture using Spring Boot\
-✔ Modern React frontend\
-✔ Proper database design with JPA & Hibernate\
-✔ Real-world financial use case\
-✔ Production-ready structure
+-   JWT-based authentication & authorization
+-   Role-based access control
+-   Dashboard analytics & charts
+-   Dockerized deployment
+-   CI/CD pipeline integration
 
-This project highlights strong backend fundamentals, frontend
-integration skills, and database handling --- ideal for showcasing
-full-stack capabilities in interviews and portfolios.
-
-------------------------------------------------------------------------
-
-## 🤝 Contribution
-
-Contributions are welcome!
-
-1.  Fork the repository\
-2.  Create your feature branch\
-3.  Commit your changes\
-4.  Push and open a Pull Request
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is open-source and available for educational and
-professional portfolio use.
-
-------------------------------------------------------------------------
-
-## 👨‍💻 Author
-
-Built with dedication by a Java Full-Stack Developer passionate about
-scalable and clean architecture.
